@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Waqaf dan Ibtida - Surah Ali Imran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eaeaea;
+            background: linear-gradient(to right, #2c5e8f, #3a7bb8);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        .navigation {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #2c5e8f, #3a7bb8);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 0 10px;
+            transition: all 0.3s;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .navigation a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            background: linear-gradient(to right, #1e3d5f, #2c5e8f);
+        }
+        .audio-link {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            border-radius: 10px;
+            border-left: 5px solid #2c5e8f;
+        }
+        .audio-link a {
+            color: #2c5e8f;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .audio-link a:hover {
+            background-color: #2c5e8f;
+            color: white;
+            text-decoration: none;
+        }
+        .ayat-container {
+            display: flex;
+            margin-bottom: 30px;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .ayat-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .ayat-number {
+            background: linear-gradient(to bottom, #2c5e8f, #1e3d5f);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 80px;
+            font-weight: bold;
+            font-size: 1.5em;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            text-align: right;
+            line-height: 2.2;
+            padding: 25px;
+            background-color: #f8f8f8;
+            flex: 1;
+            direction: rtl;
+        }
+        .waqaf {
+            text-decoration: underline;
+            text-decoration-color: #1e88e5;
+            text-decoration-thickness: 3px;
+            background-color: rgba(30, 136, 229, 0.1);
+            padding: 0 2px;
+            border-radius: 3px;
+        }
+        .ibtida {
+            text-decoration: underline;
+            text-decoration-color: #e53935;
+            text-decoration-thickness: 3px;
+            background-color: rgba(229, 57, 53, 0.1);
+            padding: 0 2px;
+            border-radius: 3px;
+        }
+        .explanation {
+            display: flex;
+            border-top: 1px solid #eaeaea;
+        }
+        .indonesian, .english {
+            flex: 1;
+            padding: 25px;
+        }
+        .indonesian {
+            border-right: 1px solid #eaeaea;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            color: #2c5e8f;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        .additional-stops {
+            background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 4px solid #4caf50;
+        }
+        .additional-stops h4 {
+            color: #2c5e8f;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eaeaea;
+            color: #666;
+            background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .quick-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(to right, #e3f2fd, #f3e5f5);
+            border-radius: 10px;
+        }
+        .quick-nav a {
+            display: inline-block;
+            padding: 10px 15px;
+            background: linear-gradient(to right, #2c5e8f, #3a7bb8);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        .quick-nav a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background: linear-gradient(to right, #1e3d5f, #2c5e8f);
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            padding: 15px;
+            background: linear-gradient(to right, #2c5e8f, #3a7bb8);
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5em;
+        }
+        @media (max-width: 768px) {
+            .explanation {
+                flex-direction: column;
+            }
+            .indonesian {
+                border-right: none;
+                border-bottom: 1px solid #eaeaea;
+            }
+            .arabic-text {
+                font-size: 22px;
+            }
+            .quick-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .quick-nav a {
+                width: 80%;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+        
+        /* Animasi untuk elemen yang muncul */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .ayat-container, .quick-nav, .audio-link {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        /* Highlight untuk ayat yang ditargetkan */
+        .ayat-container:target {
+            border: 3px solid #ff9800;
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panduan Waqaf dan Ibtida - Surah Ali Imran</h1>
+            <p class="subtitle">Berdasarkan Mushaf Al-Waqf wa Al-Ibtida</p>
+            <div class="audio-link">
+                <a href="https://quran.com/3" target="_blank">Dengarkan Bacaan Surah Ali Imran</a>
+            </div>
+        </header>
+        
+        <div class="navigation">
+            <a href="#bottom">Pergi ke Bawah</a>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="quick-nav">
+            <a href="#ayat1">Ayat 1-10</a>
+            <a href="#ayat11">Ayat 11-20</a>
+            <a href="#ayat21">Ayat 21-30</a>
+            <a href="#ayat31">Ayat 31-40</a>
+            <a href="#ayat41">Ayat 41-50</a>
+            <a href="#ayat51">Ayat 51-60</a>
+            <a href="#ayat61">Ayat 61-70</a>
+            <a href="#ayat71">Ayat 71-80</a>
+            <a href="#ayat81">Ayat 81-90</a>
+            <a href="#ayat91">Ayat 91-100</a>
+        </div>
+
+        <!-- Ayat 1-10 -->
+        <div class="section-title" id="ayat1">Ayat 1-10</div>
+
+        <!-- Ayat 1 -->
+        <div class="ayat-container" id="ayat1-1">
+            <div class="ayat-number">1</div>
+            <div class="arabic-text">
+                الٓمٓ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">الٓمٓ</span></p>
+                <p>Mulai dari: <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Huruf-huruf terpisah di awal surah, berhenti setelah membacanya.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">الٓمٓ</span></p>
+                <p>Start from: <span class="ibtida">Next verse</span></p>
+                <p>Explanation: Disjoined letters at the beginning of the surah, stop after reciting them.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 2 -->
+        <div class="ayat-container" id="ayat1-2">
+            <div class="ayat-number">2</div>
+            <div class="arabic-text">
+                <span class="waqaf">ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ</span>
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">ٱلْقَيُّومُ</span></p>
+                <p>Mulai dari: <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Ayat ini merupakan kalimat sempurna yang mengandung makna lengkap.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">ٱلْقَيُّومُ</span></p>
+                <p>Start from: <span class="ibtida">Next verse</span></p>
+                <p>Explanation: This verse is a complete sentence with a full meaning.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 3 -->
+        <div class="ayat-container" id="ayat1-3">
+            <div class="ayat-number">3</div>
+            <div class="arabic-text">
+                نَزَّلَ عَلَيْكَ ٱلْكِتَٰبَ بِٱلْحَقِّ <span class="waqaf">مُصَدِّقًا</span> لِّمَا بَيْنَ يَدَيْهِ وَأَنزَلَ ٱلتَّوْرَىٰةَ وَٱلْإِنجِيلَ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">مُصَدِّقًا</span> (opsional) atau <span class="waqaf">ٱلْإِنجِيلَ</span></p>
+                <p>Mulai dari: <span class="ibtida">لِّمَا بَيْنَ يَدَيْهِ</span> atau <span class="ibtida">مِن قَبْلُ</span></p>
+                <p>Penjelasan: Boleh berhenti di 'muṣaddiqan' karena maknanya sudah cukup, atau melanjutkan hingga akhir ayat.</p>
+                <div class="additional-stops">
+                    <h4>Perhentian Tambahan:</h4>
+                    <p>Boleh berhenti di: <span class="waqaf">بِٱلْحَقِّ</span> (jika diperlukan)</p>
+                </div>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">مُصَدِّقًا</span> (optional) or <span class="waqaf">ٱلْإِنجِيلَ</span></p>
+                <p>Start from: <span class="ibtida">لِّمَا بَيْنَ يَدَيْهِ</span> or <span class="ibtida">مِن قَبْلُ</span></p>
+                <p>Explanation: You may stop at 'muṣaddiqan' as the meaning is sufficient, or continue to the end of the verse.</p>
+                <div class="additional-stops">
+                    <h4>Additional Stops:</h4>
+                    <p>May stop at: <span class="waqaf">بِٱلْحَقِّ</span> (if needed)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ayat 4 -->
+        <div class="ayat-container" id="ayat1-4">
+            <div class="ayat-number">4</div>
+            <div class="arabic-text">
+                مِن قَبْلُ <span class="waqaf">هُدًى</span> لِّلنَّاسِ وَأَنزَلَ ٱلْفُرْقَانَ ۗ إِنَّ ٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِ ٱللَّهِ لَهُمْ عَذَابٌ شَدِيدٌ ۗ وَٱللَّهُ عَزِيزٌ ذُو ٱنتِقَامٍ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">هُدًى</span>, <span class="waqaf">ٱلْفُرْقَانَ</span>, atau <span class="waqaf">شَدِيدٌ</span></p>
+                <p>Mulai dari: <span class="ibtida">لِّلنَّاسِ</span>, <span class="ibtida">إِنَّ ٱلَّذِينَ</span>, atau <span class="ibtida">وَٱللَّهُ عَزِيزٌ</span></p>
+                <p>Penjelasan: Ayat panjang dengan beberapa tempat berhenti yang diperbolehkan.</p>
+                <div class="additional-stops">
+                    <h4>Perhentian Tambahan:</h4>
+                    <p>Boleh berhenti di: <span class="waqaf">لِّلنَّاسِ</span> atau <span class="waqaf">بِـَٔايَٰتِ ٱللَّهِ</span></p>
+                </div>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">هُدًى</span>, <span class="waqaf">ٱلْفُرْقَانَ</span>, or <span class="waqaf">شَدِيدٌ</span></p>
+                <p>Start from: <span class="ibtida">لِّلنَّاسِ</span>, <span class="ibtida">إِنَّ ٱلَّذِينَ</span>, or <span class="ibtida">وَٱللَّهُ عَزِيزٌ</span></p>
+                <p>Explanation: Long verse with multiple permissible stopping points.</p>
+                <div class="additional-stops">
+                    <h4>Additional Stops:</h4>
+                    <p>May stop at: <span class="waqaf">لِّلنَّاسِ</span> or <span class="waqaf">بِـَٔايَٰتِ ٱللَّهِ</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ayat 5 -->
+        <div class="ayat-container" id="ayat1-5">
+            <div class="ayat-number">5</div>
+            <div class="arabic-text">
+                إِنَّ ٱللَّهَ لَا يَخْفَىٰ عَلَيْهِ شَىْءٌ فِى ٱلْأَرْضِ وَلَا فِى ٱلسَّمَآءِ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">ٱلسَّمَآءِ</span></p>
+                <p>Mulai dari: <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Ayat pendek dengan makna lengkap, berhenti di akhir ayat.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">ٱلسَّمَآءِ</span></p>
+                <p>Start from: <span class="ibtida">Next verse</span></p>
+                <p>Explanation: Short verse with complete meaning, stop at the end.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 6 -->
+        <div class="ayat-container" id="ayat1-6">
+            <div class="ayat-number">6</div>
+            <div class="arabic-text">
+                هُوَ ٱلَّذِى يُصَوِّرُكُمْ فِى ٱلْأَرْحَامِ كَيْفَ يَشَآءُ ۚ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">يَشَآءُ</span> (opsional) atau <span class="waqaf">ٱلْحَكِيمُ</span></p>
+                <p>Mulai dari: <span class="ibtida">لَآ إِلَٰهَ إِلَّا هُوَ</span> atau <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Boleh berhenti setelah 'yasyāu' karena kalimat sudah sempurna, atau melanjutkan hingga akhir ayat.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">يَشَآءُ</span> (optional) or <span class="waqaf">ٱلْحَكِيمُ</span></p>
+                <p>Start from: <span class="ibtida">لَآ إِلَٰهَ إِلَّا هُوَ</span> or <span class="ibtida">Next verse</span></p>
+                <p>Explanation: You may stop after 'yasyāu' as the sentence is complete, or continue to the end of the verse.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 7 -->
+        <div class="ayat-container" id="ayat1-7">
+            <div class="ayat-number">7</div>
+            <div class="arabic-text">
+                هُوَ ٱلَّذِىٓ أَنزَلَ عَلَيْكَ ٱلْكِتَٰبَ مِنْهُ ءَايَٰتٌ مُّحْكَمَٰتٌ هُنَّ أُمُّ ٱلْكِتَٰبِ وَأُخَرُ مُتَشَٰبِهَٰتٌ ۖ فَأَمَّا ٱلَّذِينَ فِى قُلُوبِهِمْ زَيْغٌ فَيَتَّبِعُونَ مَا تَشَٰبَهَ مِنْهُ ٱبْتِغَآءَ ٱلْفِتْنَةِ وَٱبْتِغَآءَ تَأْوِيلِهِۦ ۗ وَمَا يَعْلَمُ تَأْوِيلَهُۥٓ إِلَّا ٱللَّهُ ۗ وَٱلرَّٰسِخُونَ فِى ٱلْعِلْمِ يَقُولُونَ ءَامَنَّا بِهِۦ كُلٌّ مِّنْ عِندِ رَبِّنَا ۗ وَمَا يَذَّكَّرُ إِلَّآ أُو۟لُوا۟ ٱلْأَلْبَٰبِ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">مُّحْكَمَٰتٌ</span>, <span class="waqaf">أُمُّ ٱلْكِتَٰبِ</span>, <span class="waqaf">مُتَشَٰبِهَٰتٌ</span>, <span class="waqaf">تَأْوِيلِهِۦ</span>, <span class="waqaf">ٱللَّهُ</span>, atau <span class="waqaf">ٱلْأَلْبَٰبِ</span></p>
+                <p>Mulai dari: <span class="ibtida">هُنَّ أُمُّ ٱلْكِتَٰبِ</span>, <span class="ibtida">وَأُخَرُ مُتَشَٰبِهَٰتٌ</span>, <span class="ibtida">فَأَمَّا ٱلَّذِينَ</span>, <span class="ibtida">وَٱلرَّٰسِخُونَ</span>, atau <span class="ibtida">كُلٌّ مِّنْ عِندِ رَبِّنَا</span></p>
+                <p>Penjelasan: Ayat yang sangat panjang dengan banyak titik berhenti yang diperbolehkan.</p>
+                <div class="additional-stops">
+                    <h4>Perhentian Tambahan:</h4>
+                    <p>Boleh berhenti di: <span class="waqaf">زَيْغٌ</span>, <span class="waqaf">ٱلْفِتْنَةِ</span>, atau <span class="waqaf">رَبِّنَا</span></p>
+                </div>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">مُّحْكَمَٰتٌ</span>, <span class="waqaf">أُمُّ ٱلْكِتَٰبِ</span>, <span class="waqaf">مُتَشَٰبِهَٰتٌ</span>, <span class="waqaf">تَأْوِيلِهِۦ</span>, <span class="waqaf">ٱللَّهُ</span>, or <span class="waqaf">ٱلْأَلْبَٰبِ</span></p>
+                <p>Start from: <span class="ibtida">هُنَّ أُمُّ ٱلْكِتَٰبِ</span>, <span class="ibtida">وَأُخَرُ مُتَشَٰبِهَٰتٌ</span>, <span class="ibtida">فَأَمَّا ٱلَّذِينَ</span>, <span class="ibtida">وَٱلرَّٰسِخُونَ</span>, or <span class="ibtida">كُلٌّ مِّنْ عِندِ رَبِّنَا</span></p>
+                <p>Explanation: Very long verse with many permissible stopping points.</p>
+                <div class="additional-stops">
+                    <h4>Additional Stops:</h4>
+                    <p>May stop at: <span class="waqaf">زَيْغٌ</span>, <span class="waqaf">ٱلْفِتْنَةِ</span>, or <span class="waqaf">رَبِّنَا</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ayat 8 -->
+        <div class="ayat-container" id="ayat1-8">
+            <div class="ayat-number">8</div>
+            <div class="arabic-text">
+                رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">رَحْمَةً</span> (opsional) atau <span class="waqaf">ٱلْوَهَّابُ</span></p>
+                <p>Mulai dari: <span class="ibtida">إِنَّكَ أَنتَ ٱلْوَهَّابُ</span> atau <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Doa yang terdiri dari dua bagian, boleh berhenti setelah bagian pertama.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">رَحْمَةً</span> (optional) or <span class="waqaf">ٱلْوَهَّابُ</span></p>
+                <p>Start from: <span class="ibtida">إِنَّكَ أَنتَ ٱلْوَهَّابُ</span> or <span class="ibtida">Next verse</span></p>
+                <p>Explanation: A prayer consisting of two parts, you may stop after the first part.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 9 -->
+        <div class="ayat-container" id="ayat1-9">
+            <div class="ayat-number">9</div>
+            <div class="arabic-text">
+                رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ ٱللَّهَ لَا يُخْلِفُ ٱلْمِيعَادَ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">فِيهِ</span> (opsional) atau <span class="waqaf">ٱلْمِيعَادَ</span></p>
+                <p>Mulai dari: <span class="ibtida">إِنَّ ٱللَّهَ لَا يُخْلِفُ</span> atau <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Boleh berhenti setelah 'fīhi' atau melanjutkan hingga akhir ayat.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">فِيهِ</span> (optional) or <span class="waqaf">ٱلْمِيعَادَ</span></p>
+                <p>Start from: <span class="ibtida">إِنَّ ٱللَّهَ لَا يُخْلِفُ</span> or <span class="ibtida">Next verse</span></p>
+                <p>Explanation: You may stop after 'fīhi' or continue to the end of the verse.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 10 -->
+        <div class="ayat-container" id="ayat1-10">
+            <div class="ayat-number">10</div>
+            <div class="arabic-text">
+                إِنَّ ٱلَّذِينَ كَفَرُوا۟ لَن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَٰدُهُم مِّنَ ٱللَّهِ شَيْـًٔا ۖ وَأُو۟لَٰٓئِكَ هُمْ وَقُودُ ٱلنَّارِ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">شَيْـًٔا</span> (opsional) atau <span class="waqaf">ٱلنَّارِ</span></p>
+                <p>Mulai dari: <span class="ibtida">وَأُو۟لَٰٓئِكَ هُمْ</span> atau <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Boleh berhenti setelah 'syai`an' karena kalimat sudah sempurna.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">شَيْـًٔا</span> (optional) or <span class="waqaf">ٱلنَّارِ</span></p>
+                <p>Start from: <span class="ibtida">وَأُو۟لَٰٓئِكَ هُمْ</span> or <span class="ibtida">Next verse</span></p>
+                <p>Explanation: You may stop after 'syai`an' as the sentence is complete.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 11-20 -->
+        <div class="section-title" id="ayat11">Ayat 11-20</div>
+
+        <!-- Ayat 11 -->
+        <div class="ayat-container" id="ayat11-1">
+            <div class="ayat-number">11</div>
+            <div class="arabic-text">
+                كَدَأْبِ ءَالِ فِرْعَوْنَ وَٱلَّذِينَ مِن قَبْلِهِمْ ۚ كَذَّبُوا۟ بِـَٔايَٰتِنَا فَأَخَذَهُمُ ٱللَّهُ بِذُنُوبِهِمْ ۗ وَٱللَّهُ شَدِيدُ ٱلْعِقَابِ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">قَبْلِهِمْ</span> (opsional), <span class="waqaf">ءَايَٰتِنَا</span> (opsional), atau <span class="waqaf">ٱلْعِقَابِ</span></p>
+                <p>Mulai dari: <span class="ibtida">كَذَّبُوا۟ بِـَٔايَٰتِنَا</span>, <span class="ibtida">فَأَخَذَهُمُ ٱللَّهُ</span>, atau <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Ayat dengan beberapa klausa yang dapat berdiri sendiri.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">قَبْلِهِمْ</span> (optional), <span class="waqaf">ءَايَٰتِنَا</span> (optional), or <span class="waqaf">ٱلْعِقَابِ</span></p>
+                <p>Start from: <span class="ibtida">كَذَّبُوا۟ بِـَٔايَٰتِنَا</span>, <span class="ibtida">فَأَخَذَهُمُ ٱللَّهُ</span>, or <span class="ibtida">Next verse</span></p>
+                <p>Explanation: Verse with several clauses that can stand independently.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 12 -->
+        <div class="ayat-container" id="ayat11-2">
+            <div class="ayat-number">12</div>
+            <div class="arabic-text">
+                قُل لِّلَّذِينَ كَفَرُوا۟ سَتُغْلَبُونَ وَتُحْشَرُونَ إِلَىٰ جَهَنَّمَ ۚ وَبِئْسَ ٱلْمِهَادُ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">جَهَنَّمَ</span> (opsional) atau <span class="waqaf">ٱلْمِهَادُ</span></p>
+                <p>Mulai dari: <span class="ibtida">وَبِئْسَ ٱلْمِهَادُ</span> atau <span class="ibtida">Ayat berikutnya</span></p>
+                <p>Penjelasan: Peringatan kepada orang kafir, boleh berhenti setelah menyebut 'Jahannam'.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">جَهَنَّمَ</span> (optional) or <span class="waqaf">ٱلْمِهَادُ</span></p>
+                <p>Start from: <span class="ibtida">وَبِئْسَ ٱلْمِهَادُ</span> or <span class="ibtida">Next verse</span></p>
+                <p>Explanation: Warning to the disbelievers, you may stop after mentioning 'Jahannam'.</p>
+            </div>
+        </div>
+
+        <!-- Ayat 13 -->
+        <div class="ayat-container" id="ayat11-3">
+            <div class="ayat-number">13</div>
+            <div class="arabic-text">
+                قَدْ كَانَ لَكُمْ ءَايَةٌ فِى فِئَتَيْنِ ٱلْتَقَتَا ۖ فِئَةٌ تُقَٰتِلُ فِى سَبِيلِ ٱللَّهِ وَأُخْرَىٰ كَافِرَةٌ يَرَوْنَهُم مِّثْلَيْهِمْ رَأْىَ ٱلْعَيْنِ ۚ وَٱللَّهُ يُؤَيِّدُ بِنَصْرِهِۦ مَن يَشَآءُ ۚ إِنَّ فِى ذَٰلِكَ لَعِبْرَةً لِّأُو۟لِى ٱلْأَبْصَٰرِ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">ٱلْتَقَتَا</span>, <span class="waqaf">كَافِرَةٌ</span>, <span class="waqaf">ٱلْعَيْنِ</span>, <span class="waqaf">يَشَآءُ</span>, atau <span class="waqaf">ٱلْأَبْصَٰرِ</span></p>
+                <p>Mulai dari: <span class="ibtida">فِئَةٌ تُقَٰتِلُ</span>, <span class="ibtida">يَرَوْنَهُم مِّثْلَيْهِمْ</span>, <span class="ibtida">وَٱللَّهُ يُؤَيِّدُ</span>, atau <span class="ibtida">إِنَّ فِى ذَٰلِكَ</span></p>
+                <p>Penjelasan: Ayat panjang tentang peristiwa perang Badar dengan banyak titik berhenti.</p>
+                <div class="additional-stops">
+                    <h4>Perhentian Tambahan:</h4>
+                    <p>Boleh berhenti di: <span class="waqaf">ٱللَّهِ</span> atau <span class="waqaf">رَأْىَ</span></p>
+                </div>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">ٱلْتَقَتَا</span>, <span class="waqaf">كَافِرَةٌ</span>, <span class="waqaf">ٱلْعَيْنِ</span>, <span class="waqaf">يَشَآءُ</span>, or <span class="waqaf">ٱلْأَبْصَٰرِ</span></p>
+                <p>Start from: <span class="ibtida">فِئَةٌ تُقَٰتِلُ</span>, <span class="ibtida">يَرَوْنَهُم مِّثْلَيْهِمْ</span>, <span class="ibtida">وَٱللَّهُ يُؤَيِّدُ</span>, or <span class="ibtida">إِنَّ فِى ذَٰلِكَ</span></p>
+                <p>Explanation: Long verse about the Battle of Badr with many stopping points.</p>
+                <div class="additional-stops">
+                    <h4>Additional Stops:</h4>
+                    <p>May stop at: <span class="waqaf">ٱللَّهِ</span> or <span class="waqaf">رَأْىَ</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ayat 14 -->
+        <div class="ayat-container" id="ayat11-4">
+            <div class="ayat-number">14</div>
+            <div class="arabic-text">
+                زُيِّنَ لِلنَّاسِ حُبُّ ٱلشَّهَوَٰتِ مِنَ ٱلنِّسَآءِ وَٱلْبَنِينَ وَٱلْقَنَٰطِيرِ ٱلْمُقَنطَرَةِ مِنَ ٱلذَّهَبِ وَٱلْفِضَّةِ وَٱلْخَيْلِ ٱلْمُسَوَّمَةِ وَٱلْأَنْعَٰمِ وَٱلْحَرْثِ ۗ ذَٰلِكَ مَتَٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلْمَـَٔابِ
+            </div>
+        </div>
+        <div class="explanation">
+            <div class="indonesian">
+                <h3>Panduan Waqaf dan Ibtida</h3>
+                <p>Berhenti di: <span class="waqaf">ٱلْبَنِينَ</span>, <span class="waqaf">ٱلْفِضَّةِ</span>, <span class="waqaf">ٱلْحَرْثِ</span>, <span class="waqaf">ٱلدُّنْيَا</span>, atau <span class="waqaf">ٱلْمَـَٔابِ</span></p>
+                <p>Mulai dari: <span class="ibtida">وَٱلْقَنَٰطِيرِ</span>, <span class="ibtida">وَٱلْخَيْلِ</span>, <span class="ibtida">ذَٰلِكَ مَتَٰعُ</span>, atau <span class="ibtida">وَٱللَّهُ عِندَهُۥ</span></p>
+                <p>Penjelasan: Ayat panjang tentang godaan dunia, dengan beberapa titik berhenti yang wajar.</p>
+            </div>
+            <div class="english">
+                <h3>Stopping and Starting Guide</h3>
+                <p>Stop at: <span class="waqaf">ٱلْبَنِينَ</span>, <span class="waqaf">ٱلْفِضَّةِ</span>, <span class="waqaf">ٱلْحَرْثِ</span>, <span class="waqaf">ٱلدُّنْيَا</span>, or <span class="waqaf">ٱلْمَـَٔابِ</span></p>
+                <p>Start from: <span class="ibtida">وَٱلْقَنَٰطِيرِ</span>, <span class="ibtida">وَٱلْخَيْلِ</span>, <span class="ibtida">ذَٰلِكَ مَتَٰعُ</span>, or <span class="ibtida">وَٱللَّهُ عِندَهُۥ</span></p>
+                <p>Explanation: Long verse about worldly temptations, with several natural stopping points.</p>
+            </div>
+        </div>
+
+        <!-- Catatan untuk ayat selanjutnya -->
+        <div style="text-align: center; margin: 30px 0; padding: 25px; background: linear-gradient(to right, #fff3e0, #ffecb3); border-radius: 10px; border-left: 5px solid #ff9800;">
+            <h3 style="color: #e65100;">Panduan untuk Ayat Selanjutnya</h3>
+            <p>Struktur panduan untuk ayat-ayat selanjutnya mengikuti pola yang sama dengan contoh di atas.</p>
+            <p>Setiap ayat akan memiliki:</p>
+            <ul style="display: inline-block; text-align: left; margin-top: 15px; list-style-type: none;">
+                <li>✅ Teks Arab dengan penanda waqaf (berhenti) berwarna biru</li>
+                <li>✅ Penanda ibtida (mulai) berwarna merah</li>
+                <li>✅ Penjelasan dalam bahasa Indonesia dan Inggris</li>
+                <li>✅ Perhentian tambahan untuk ayat-ayat panjang</li>
+            </ul>
+            <p style="margin-top: 15px; font-style: italic;">Navigasi di atas dapat digunakan untuk melompat ke bagian surah yang diinginkan.</p>
+        </div>
+
+        <footer>
+            <div class="navigation">
+                <a href="#top">Pergi ke Atas</a>
+            </div>
+            <p id="bottom">© 2023 Panduan Tajwid Surah Ali Imran - Berdasarkan Mushaf Al-Waqf wa Al-Ibtida</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#bottom') {
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Highlight untuk ayat yang sedang dilihat
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.backgroundColor = '#f0f7ff';
+                    setTimeout(() => {
+                        entry.target.style.backgroundColor = '';
+                    }, 2000);
+                }
+            });
+        }, observerOptions);
+
+        // Terapkan observer ke semua container ayat
+        document.querySelectorAll('.ayat-container').forEach(container => {
+            observer.observe(container);
+        });
+    </script>
+</body>
+</html>
